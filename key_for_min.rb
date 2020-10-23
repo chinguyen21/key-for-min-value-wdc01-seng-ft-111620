@@ -8,7 +8,8 @@ def key_for_min_value(name_hash)
   min = array[0]
   array.each do |number| 
     if number < min
-      min = number 
+      min = number
+      lowest_key = key
     end
   end 
   name_hash.each {|key,value| return key if value == min}
